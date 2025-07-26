@@ -67,7 +67,7 @@ You can deploy this site with:
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/your-username/rotaract-club-website.git
+   git clone https://github.com/JS-code7/rotaract-club-website.git
    cd rotaract-club-website
 🙌 Credits & Contributors
 Role	Name
