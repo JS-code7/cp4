@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donations - Rotaract Club</title>
+  <link rel="stylesheet" href="styles_updated.css">
+  <script src="assets/script.js" defer></script>
+</head>
+<body>
+
+<!-- Navigation Buttons -->
+<div class="cta-buttons">
+  <a href="index_updated.html" class="btn">🔵 Home</a>
+  <a href="about_us_updated.html" class="btn purple">🟣 About Us</a>
+  <a href="event_updated.html" class="btn blue">🔵 View Events</a>
+  <a href="initiatives_updated.html" class="btn blue">🟣 initiatives</a>
+  <a href="Announcements_updated.html" class="btn green">🟢 Announcements</a>
+  <a href="membership_updated.html" class="btn green">🟢 Membership</a>
+  <a href="media_updated.html" class="btn purple">🟣 Media</a>
+</div>
+
+<!-- Donation Section -->
+<section id="donation" class="donation-section section">
+  <h2 class="section-title">💡 Why We Raise Funds</h2>
+  <p class="section-subtitle" style="text-align: center;"><b>Your contributions help us drive change through impactful initiatives across education, healthcare, environment, and youth development. </b></p>
+<br>
+  <div class="cause-grid">
+    <div style="text-align: center;" class="cause-box card">
+      <img src="assets/event3.jpg" alt="Education">
+      <h4>Sponsor Education</h4>
+      <p>Support a child’s schooling with basic needs, books, and mentorship.</p>
+    </div>
+    <div style="text-align: center;" class="cause-box card">
+      <img src="assets/enviroment.jpg" alt="Environment" height="300px" width="500px">
+      <h4>Plant Trees</h4>
+      <p>Promote sustainability by funding our monthly tree plantation drives.</p>
+    </div>
+    <div style="text-align: center;" class="cause-box card">
+      <img src="assets/health.jpg" alt="Health" height="350px" width="500px">
+      <h4>Medical Aid</h4>
+      <p>Help organize blood donation and rural health check-up camps.</p>
+    </div>
+    <div style="text-align: center;" class="cause-box card">
+      <img src="assets/tech.jpg" alt="Tech"  height="350px" width="500px">
+      <h4>Tech for All</h4>
+      <p>Enable tech literacy and digital empowerment for rural students.</p>
+    </div>
+  </div>
+
+  <h2 class="section-title">💳 Make a Donation</h2>
+  <form id="donationForm" class="donation-form">
+    <input type="text" name="fullname" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+
+    <div class="amount-options">
+      <button type="button" class="amount-btn">₹100</button>
+      <button type="button" class="amount-btn">₹500</button>
+      <button type="button" class="amount-btn">₹1000</button>
+      <input type="number" name="customAmount" placeholder="Custom Amount (₹)" min="1">
+    </div>
+
+    <select name="purpose" required>
+      <option value="">Choose a Cause</option>
+      <option value="education">Education</option>
+      <option value="environment">Environment</option>
+      <option value="health">Healthcare</option>
+      <option value="tech">Tech Literacy</option>
+    </select>
+
+    <textarea name="notes" placeholder="Message (Optional)"></textarea>
+
+    <div style="text-align: center;" class="security-badge">
+      <img src="assets/money.jpg" alt="SSL Secured" height="300px" width="450px" />
+      <br>
+      <span><b>Your info is safe with </b></span>
+    </div>
+
+    <button type="submit" class="btn">Donate Now</button>
+  </form>
+
+  <div style="text-align: center;" class="progress-box card">
+    <br>
+    <h4 style="text-align: center;">📊 Tech Literacy Drive</h4>
+    <div style="text-align: center;"class="progress-bar">
+      <div style="text-align: center;" class="progress">₹35,000 / ₹50,000 Raised</div>
+    </div>
+  </div>
+
+  <div style="text-align: center;" class="donor-widget card">
+    <h4>🎉 Recent Donors</h4>
+    <ul>
+      <p style="text-align: center;">Amit – ₹500</p>
+      <p style="text-align: center;">Sneha – ₹1000</p>
+      <p style="text-align: center;">Anonymous – ₹200</p>
+    </ul>
+  </div>
+</section>
+
+</body>
+</html>
+<script src="script.js"></script>
+

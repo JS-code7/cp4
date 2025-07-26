@@ -1,0 +1,91 @@
+ <div class="cta-buttons">
+ <a href="index_updated.html" class="btn">🔵 Home</a>
+ <a href="about_us_updated.html" class="btn purple">🟣 About Us</a>
+        <a href="event_updated.html" class="btn blue">🔵 View Events</a>
+        <a href="initiatives_updated.html" class="btn blue">🟣 initiatives</a>
+        <a href="Announcements_updated.html" class="btn green">🟢 Announcements</a>
+        <a href="donations_updated.html" class="btn blue">🟣 Donations</a>
+        <a href="membership_updated.html" class="btn green">🟢membership </a>
+ </div>
+<link rel="stylesheet" href="styles_updated.css">
+<script src="assets/script.js"></script>
+<!-- MEDIA SECTION -->
+<section id="media" class="section media-section">
+  <h2 class="section-title">Our Moments in Frames</h2>
+
+  <!-- Photo Gallery Filters -->
+  <div style="text-align: center;" class="filter-buttons">
+    <button onclick="filterGallery('all')" class="active">All</button>
+    <button onclick="filterGallery('social')">Social</button>
+    <button onclick="filterGallery('technical')">Technical</button>
+    <button onclick="filterGallery('outreach')">Outreach</button>
+  </div>
+
+  <!-- Photo Gallery Grid -->
+  <div class="photo-gallery">
+    <div class="photo-item social" onclick="openLightbox('img1.jpg', 'RotaFest 2025')">
+      <img src="assets/event3.jpg" alt="RotaFest 2025" height="250px" width="250px" />
+      <h1 class="caption">RotaFest 2025</h1>
+    </div>
+    <div class="photo-item outreach" onclick="openLightbox('img2.jpg', 'Tree Plantation Drive')">
+      <img src="assets/tree.jpg" alt="Tree Plantation Drive" />
+      <h1 class="caption">Tree Plantation Drive</h1>
+    </div>
+    <div class="photo-item technical" onclick="openLightbox('img3.jpg', 'Women in Tech')">
+      <img src="assets/woman.jpg" alt="Women in Tech Workshop" height="250px" width="250px"  />
+      <h1 class="caption">Women in Tech Workshop</h1>
+    </div>
+    <!-- Add more items -->
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="" />
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <!-- Video Archives -->
+  <h2 class="section-title">Watch Us in Action</h2>
+
+  <div class="featured-video">
+    <iframe src="https://www.youtube.com/watch?v=qiIjgEz2zQ0&pp=ygUMcm90cmFjdCBpbmZv" title="Featured Video" allowfullscreen></iframe>
+  </div>
+
+  <div class="video-grid">
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/watch?v=qiIjgEz2zQ0&pp=ygUMcm90cmFjdCBpbmZv" title="Event Recap"></iframe>
+      <h4>Blood Donation Drive</h4>
+      <p>Over 120 units collected in one day. A life-saving event!</p>
+    </div>
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/watch?v=qiIjgEz2zQ0&pp=ygUMcm90cmFjdCBpbmZv" title="Women in Tech"></iframe>
+      <h4>Women in Tech Workshop</h4>
+      <p>Inspiring talks and hands-on coding by female leaders.</p>
+    </div>
+    <!-- Add more cards -->
+  </div>
+
+  <!-- Press Mentions / Blog Posts -->
+  <h2 class="section-title">In the Spotlight</h2>
+  <div class="press-grid">
+    <div style="text-align: center;" class="press-card">
+      <br><br><br>
+      <img src="assets/blog.jpg" alt="Press Mention 1" height="450px" width="1000px"/>
+      <br>
+      <hr>
+      <h1>“Empowering Youth” – Times Now</h1>
+      <h3>Our tree plantation drive gets featured in local media.</h3>
+      <a href="#" target="_blank">Read More</a>
+    </div>
+    <div style="text-align: center;" class="press-card">
+      <img src="assets/bts.jpg" alt="Behind the Scenes"  height="450px" width="1000px" />
+      <br>
+      <h1>Behind the Scenes at RotaFest</h1>
+      <h3>A member's perspective on planning a flagship event.<h3>
+      <a href="#">Read More</a>
+    </div>
+    <!-- Add more cards -->
+  </div>
+</section>
+<script src="script.js"></script>

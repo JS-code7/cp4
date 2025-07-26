@@ -1,0 +1,91 @@
+<div class="cta-buttons">
+<div class="cta-buttons"><div class="cta-buttons">
+<link rel="stylesheet" href="styles_updated.css">
+<script src="assets/script.js"></script>
+<a href="index_updated.html" class="btn">🔵 Home</a>
+ <a href="about_us_updated.html" class="btn purple">🟣 About Us</a>
+    
+        <a href="initiatives_updated.html" class="btn blue">🟣 initiatives</a>
+        <a href="Announcements_updated.html" class="btn green">🟢 Announcements</a>
+        <a href="donations_updated.html" class="btn blue">🟣 Donations</a>
+        <a href="membership_updated.html" class="btn green">🟢membership </a>
+          <a href="media_updated.html" class="btn purple">🟣Media</a>
+          </div>
+<!-- EVENTS SECTION -->
+<section id="events" class="section events-section">
+  <h2 class="section-title">Upcoming Events</h2>
+  <div class="events-grid">
+    <div class="event-card">
+      <div class="event-status open">Registration Open</div>
+      <h2>Tech for Change Hackathon</h2>
+      <p><strong>Date:</strong> August 18, 2025 | 10:00 AM</p>
+      <p><strong>Mode:</strong> Online via Zoom</p>
+      <p class="event-desc">A 24-hour tech challenge focused on sustainable solutions. Open to all disciplines.</p>
+      <button class="register-btn" onclick="openModal()">Register Now</button>
+    </div>
+
+    <div class="event-card">
+      <div class="event-status closed">Registration Closed</div>
+      <h2>Green Warriors Drive</h2>
+      <p><strong>Date:</strong> July 30, 2025 | 9:00 AM</p>
+      <p><strong>Venue:</strong> City Park, Ahmedabad</p>
+      <p class="event-desc">A citywide tree plantation campaign with schools and colleges participating.</p>
+      <button disabled>Register Closed</button>
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
+
+  <!-- Modal for Registration -->
+  <div class="modal" id="registerModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h1 style="text-align: center;">Event Registration</h1>
+      <br>
+      <form id="eventForm">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <input type="text" placeholder="College/Institution (Optional)" />
+        <textarea placeholder="Comments or Questions"></textarea>
+        <button type="regester now" id="volunteerSubmit">Regester now</button>
+
+
+      </form>
+    </div>
+  </div>
+
+  <!-- Past Events -->
+  <h2 class="section-title">Past Highlights</h2>
+  <div class="past-events">
+    <div class="past-event-card">
+      <h2>Blood Donation Camp</h2>
+      <p><strong>Date:</strong> March 12, 2025</p>
+      <p>Collected over 120 units with 200+ student volunteers.</p>
+      <a href="#">See Photos</a> <span class="tag">#Health</span>
+    </div>
+    <div class="past-event-card">
+      <h2>Women in Tech Workshop</h2>
+      <p><strong>Date:</strong> February 3, 2025</p>
+      <p>Empowering women with hands-on coding sessions.</p>
+      <a href="#">Watch Recap</a> <span class="tag">#SkillBuilding</span>
+    </div>
+    <!-- Add more past events -->
+  </div>
+
+  <!-- Media Gallery -->
+  <h2 class="section-title">Event Media Gallery</h2>
+  <div class="gallery-tabs">
+    <button class="tab-btn active" onclick="showGallery('photos')">Photos</button>
+    <button class="tab-btn" onclick="showGallery('videos')">Videos</button>
+  </div>
+  <div style="text-align: center;" class="gallery-content" id="photos">
+    <img src="assets/event3.jpg" height="420px" width="450px" alt="Event 1" class="gallery-thumb" />
+    <img src="assets/events6.jpg" height="420px" width="450px"  alt="Event 2" class="gallery-thumb" />
+    <!-- More thumbnails -->
+  </div>
+  <div class="gallery-content hidden" style="text-align: center;" id="videos">
+    <iframe width="100%" height="300" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    <!-- Add more embeds -->
+  </div>
+</section>
+<script src="script.js"></script>

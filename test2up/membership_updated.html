@@ -1,0 +1,230 @@
+<div class="cta-buttons">
+  <a href="index_updated.html" class="btn">🔵 Home</a>
+<a href="about_us_updated.html" class="btn purple">🟣 About Us</a>
+<a href="event_updated.html" class="btn blue">🔵 View Events</a>
+<a href="initiatives_updated.html" class="btn blue">🟣 initiatives</a>
+<a href="Announcements_updated.html" class="btn green">🟢 Announcements</a>
+<a href="donations_updated.html" class="btn blue">🟣 Donations</a>
+<a href="media_updated.html" class="btn purple">🟣Media</a>
+</div>
+<link rel="stylesheet" href="styles_updated.css">
+<script src="assets/script.js"></script>
+<section id="membership" class="section membership-section">
+  <h2 class="section-title">🙌 Join Our Community</h2>
+  <h1 class="section-subtitle">Become a part of a youth-driven movement for social good, innovation, and leadership.<h1>
+  <br><br>
+
+  <!-- Membership Benefits -->
+  <div class="benefits-grid">
+    <div style="text-align: center;" class="benefit-card">
+      <img src="assets/networking.jpg" alt="Networking" height="450px" width="650px" style="border: solid;">
+      <br>
+      <h1>Networking</h1>
+      <p>Connect with peers, professionals, and change-makers across domains.</p>
+    </div>
+    <br>
+    <div style="text-align: center;" class="benefit-card">
+      <img src="assets/leadership.jpg" alt="Leadership" height="450px" width="650px">
+      <br>
+      <h1>Leadership Skills</h1>
+      <p>Access leadership workshops, mentorship programs, and on-field experience.</p>
+    </div>
+    <br>
+    <div style="text-align: center;" class="benefit-card">
+      <img src="assets/events6.jpg" alt="Events" height="450px" width="650px">
+      <br>
+      <h1>Event Access</h1>
+      <p>Priority invites to club-hosted events, conferences, and technical expos.</p>
+    </div>
+    <br>
+    <div style="text-align: center;" class="benefit-card">
+      <img src="assets/certi.jpg" alt="Certificates" height="450px" width="450px">
+      <br>
+      <h2 style="text-align: center;">Certificates</h2>
+      <p>Earn certificates for contributions, event participation, and volunteer roles.</p>
+    </div>
+    <br>
+    <div style="text-align: center;" class="benefit-card">
+      <img src="assets/swags.jpg" alt="Swag" height="450px" width="650px">
+      <br>
+      <h1>Club Swag</h1>
+      <p>Get exclusive t-shirts, badges, and personalized merchandise.</p>
+    </div>
+    <br>
+    <div style="text-align: center;" class="benefit-card">
+      <img src="assets/impact.jpg" alt="Impact" height="450px" width="550px">
+      <br>
+      <h1>Community Impact</h1>
+      <p>Be a part of initiatives that create lasting social impact and awareness.</p>
+    </div>
+  </div>
+  <br>
+
+  <hr style="border: solid;">
+  <br>
+  <br>
+  <!-- Join/Renew Form -->
+   <body>
+  <div class="form-wrapper">
+    <h1 style="text-align: center;">✍ Membership Form</h1>
+    <form id="membershipForm" class="membership-form">
+      <input type="text" name="fullname" placeholder="Full Name" required>
+      <input type="date" name="dob" placeholder="Date of Birth" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="text" name="college" placeholder="College/Institution">
+
+      <select name="membershipType" required>
+        <option value="">Membership Type</option>
+        <option value="new">New Join</option>
+        <option value="renew">Renewal</option>
+      </select>
+
+      <textarea name="message" placeholder="Any Comments (Optional)"></textarea>
+
+      <label class="consent">
+        <input type="checkbox" required> I agree to the <a href="#">terms & privacy policy</a>.
+      </label>
+
+      <button type="submit" class="btn">Join / Renew Now</button>
+    </form>
+  </div>
+   
+
+  <!-- Include Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.0.0/firebase-analytics.js"></script>
+
+<script>
+  // Your Firebase config
+  const firebaseConfig = {
+    apiKey: "AIzaSyAVyuckBhxSln3q5jwbv8o9oLe58a-2JPY",
+    authDomain: "rotract4.firebaseapp.com",
+    databaseURL: "https://rotract4.firebaseio.com",
+    projectId: "membershipForm",
+    storageBucket: "rotract4.firebasestorage.app",
+    messagingSenderId: "165869256913",
+    appId: "1:165869256913:web:71c5ca87ae3e1dae63c5f0"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.database();
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("membershipForm");
+
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const data = {
+          fullname: form.fullname.value,
+          dob: form.dob.value,
+          email: form.email.value,
+          phone: form.phone.value,
+          college: form.college.value,
+          membershipType: form.membershipType.value,
+          message: form.message.value
+        };
+
+        const ref = db.ref("memberships"); // collection name
+        ref.push(data)
+          .then(() => {
+            alert("✅ Membership form submitted to Firebase!");
+            form.reset();
+          })
+          .catch((error) => {
+            alert("❌ Error: " + error.message);
+          });
+      });
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+  <!-- Admin Member Directory Placeholder -->
+  <div class="admin-note">
+    <h4>🔒 Admin Panel</h4>
+    <p>This section is visible only to core team members for managing member records.</p>
+    <a href="/admin/login" class="btn-secondary">Login as Admin</a>
+  </div>
+</section>
+<script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+

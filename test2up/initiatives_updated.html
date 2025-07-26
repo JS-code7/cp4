@@ -1,0 +1,135 @@
+<div class="cta-buttons">
+  <a href="index_updated.html" class="btn">🔵 Home</a>
+  <a href="about_us_updated.html" class="btn purple">🟣 About Us</a>
+  <a href="event_updated.html" class="btn blue">🔵 View Events</a>
+  <a href="Announcements_updated.html" class="btn green">🟢 Announcements</a>
+  <a href="donations_updated.html" class="btn blue">🟣 Donations</a>
+  <a href="membership_updated.html" class="btn green">🟢membership </a>
+  <a href="media_updated.html" class="btn purple">🟣Media</a>
+</div>
+<link rel="stylesheet" href="styles_updated.css">
+<script src="assets/script.js"></script>
+<!-- INITIATIVES SECTION -->
+<section id="initiatives" class="section initiatives-section">
+
+  <!-- 1. Our Initiatives -->
+  <h2 class="section-title">Our Initiatives</h2>
+  <link rel="stylesheet" href="styles.css">
+  <div class="tabs">
+    
+  </div>
+
+  <div id="ongoing" class="tab-content">
+    <div style="text-align: center " class="initiative-card active">
+
+      <img src="assets/enviroment.jpg" height="420px" width="650px" style="text-align: center;" alt="Green Campus">
+      <div class="card-body">
+
+        <h2>Green Campus Drive</h2>
+        <span class="tag active">Active</span>
+        <p>Monthly tree planting and clean-up drives for sustainability.</p>
+        <p><strong>Start:</strong> Jan 2025</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+    <br><br><br>
+    <div style="text-align: center;" class="initiative-card">
+      <img src="assets/health.jpg" height="420px" width="650px" style="text-align: center;" alt="Mental Health">
+      <div class="card-body">
+        <h2>Mental Health Awareness Week</h2>
+        <span class="tag active">Active</span>
+        <p>Workshops and group sessions to promote mental well-being.</p>
+        <p><strong>Duration:</strong> July 2025</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+
+  <div id="past" class="tab-content hidden">
+    <div style="text-align: center;" class="initiative-card">
+      <img src="assets/events6.jpg" height="420px" width="650px" style="text-align: center;" alt="Coding Workshop">
+      <div class="card-body">
+        <h2>Coding for Beginners Workshop</h2>
+        <span class="tag completed">Completed</span>
+        <p>Introductory sessions for students exploring software development.</p>
+        <p><strong>Completed:</strong> May 2024</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+    <br><br><br>
+    <div style="text-align: center;" class="initiative-card">
+      <img src="assets/enviroment.jpg" height="420px" width="650px" style="text-align: center;"
+        alt="Plastic Free Campus">
+      <div class="card-body">
+        <h2>Plastic-Free Campus Campaign</h2>
+        <span class="tag completed">Completed</span>
+        <p>Awareness and collection drives to eliminate plastic usage.</p>
+        <p><strong>Completed:</strong> Dec 2023</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+
+  <!-- 2. Volunteer Opportunities -->
+  <h1 class="section-title">Get Involved</h1>
+  <div class="volunteer-grid">
+    <div style="text-align: center;" class="volunteer-card">
+      <h2>Join as Event Volunteer</h2>
+      <p><strong>Commitment:</strong> 5-6 hrs/week</p>
+      <p>Support planning and logistics during club events.</p>
+      <button onclick="openForm()">Join Now</button>
+    </div>
+    <div style="text-align: center;" class="volunteer-card">
+      <h4>Tech Support Team</h4>
+      <p><strong>Commitment:</strong> Flexible</p>
+      <p>Manage live streams, websites, and automation tools.</p>
+      <button onclick="openForm()">Join Now</button>
+    </div>
+  </div>
+
+  <!-- Modal Form -->
+  <div id="volunteerModal" class="modal">
+    <div style="text-align: center;" class="modal-content">
+      <span class="close" onclick="closeForm()">&times;</span>
+      <h1>Volunteer Sign-Up</h1>
+      <form id="volunteerForm">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <select required>
+          <option value="">Interest Area</option>
+          <option>Environment</option>
+          <option>Education</option>
+          <option>Tech</option>
+        </select>
+
+        <input type="text" placeholder="Availability (e.g., weekends)" />
+        <button type="submit" id="volunteerSubmit">Submit</button>
+
+
+      </form>
+    </div>
+  </div>
+
+  <!-- 3. Real Stories, Real Impact -->
+  <h1 class="section-title">Real Stories, Real Impact</h1>
+  <div class="impact-carousel">
+    <div style="text-align: center;" class="story-card">
+      <img src="assets/g1.jpg" height="320px" width="450px" alt="Aayushi">
+      <br><br>
+      <blockquote>“Helping organize the Women in Tech event gave me a sense of purpose.”</blockquote>
+      <p class="author">Aayushi Shah, Member since 2023</p>
+    </div>
+    <div style="text-align: center;" class="story-card">
+      <img src="assets/b1.jpg" height="320px" width="450px" alt="Rajan">
+      <br><br>
+      <blockquote>“Volunteering in rural tech camps opened my eyes to real-world needs.”</blockquote>
+      <p class="author">Rajan Mehta, Outreach Lead</p>
+    </div>
+    <!-- More stories can be added -->
+  </div>
+
+</section>
+<script src="script.js"></script>
